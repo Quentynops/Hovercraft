@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Retro Emulator</title>
+</head>
+<body>
+
+    <!-- The emulator container -->
+    <div style="width:640px; height:480px; max-width:100%; margin: 0 auto;">
+        <div id="game"></div>
+    </div>
+
+    <script type="text/javascript">
+        // Bind the element
+        EJS_player = '#game'; 
+        
+        // Define your target console system (e.g., 'nes', 'gba', 'segaMD', 'snes')
+        EJS_core = 'nes'; 
+        
+        // Direct link to your game ROM file
+        EJS_gameUrl = 'https://your-domain.com'; 
+        
+        // Optional: Path to BIOS if the system requires it (like GBA or PS1)
+        EJS_biosUrl = ''; 
+        
+        // Use the public EmulatorJS CDN for network data assets
+        EJS_pathtodata = 'https://emulatorjs.org'; 
+    </script>
+    
+    <!-- Load the official emulator engine directly from the CDN -->
+    <script src="https://emulatorjs.orgloader.js"></script>
+
+</body>
+</html>
